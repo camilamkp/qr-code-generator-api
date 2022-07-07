@@ -1,0 +1,357 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f2ea;
+  padding: 0 2rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+body h1 {
+  font-family: "Kanit", sans-serif;
+  display: inline-block;
+  border-bottom: 1px solid grey;
+  padding-bottom: 0.5rem;
+  padding-right: 2rem;
+}
+
+body button {
+  background-color: #fdc886;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  margin: 0.5rem auto 1.5rem;
+  border: 2px solid #fdc886;
+  line-height: 1.1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+body button:hover {
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+}
+
+body button:active {
+  background-color: #dea764;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  border: 2px solid #dea764;
+}
+
+body button:focus {
+  outline: none;
+  border: 2px solid #dea764;
+}
+
+body button:disabled {
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: none;
+          transform: none;
+  cursor: not-allowed;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+}
+
+body main .container {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  min-width: 350px;
+  max-width: 500px;
+  width: 50%;
+  padding: 0 2rem;
+  min-height: 700px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+body main .container header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .container header h2, body main .container header h3 {
+  margin-bottom: 0.2rem;
+}
+
+body main .container header h2 {
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+body main .container header h3 {
+  font-weight: 200;
+  font-size: 1rem;
+  width: 80%;
+}
+
+body main .container .containerFront .flipped {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+body main .container .containerBack {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+body main .container .containerBack .flipped {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+body main .container .info {
+  text-align: center;
+  margin-top: 0.2rem;
+  font-weight: 200;
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+body main .setting {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .setting input[type='color'] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: 1px solid #000000;
+  cursor: pointer;
+  height: 50px;
+  padding: 0 2rem;
+  width: 50px;
+}
+
+body main .setting input[type='color']:focus {
+  outline: none;
+  border: 2px solid #dea764;
+  border-radius: 2px;
+}
+
+body main .setting .colors {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body main .setting .colors span {
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+body main .setting .subLabel {
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+body main .setting input[type='text'] {
+  border: 1px solid #000000;
+  padding: 0.35rem 0.85rem 0.35rem 0.4rem;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border-radius: 0.3rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+body main .setting input[type='text']:focus {
+  outline: none;
+  border: 1px solid #dea764;
+}
+
+body main .setting input[type='range'] {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background: #d9d9d9;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+body main .setting input[type='range']:checked {
+  background-color: #fdc886;
+}
+
+body main .setting input[type='range']:focus {
+  outline: none;
+  border: 2px solid #dea764;
+  background-color: #dea764;
+}
+
+body main .setting input[type='range']::-webkit-slider-thumb:hover, body main .setting input[type='range'] ::-moz-range-thumb:hover {
+  background: #dea764;
+}
+
+body main .setting input[type='range']:active::-webkit-slider-thumb, body main .setting input[type='range'] :active::-moz-range-thumb {
+  background: #dea764;
+}
+
+body main .setting input[type='range']::-moz-range-thumb, body main .setting input[type='range'] ::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #fdc886;
+  cursor: pointer;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+
+body main .setting input[type='range']:focus::-webkit-slider-thumb {
+  -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #dea764;
+          box-shadow: 0 0 0 3px #fff, 0 0 0 5px #dea764;
+}
+
+body main .setting input[type='radio'] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  background-clip: content-box;
+  border: 1px solid #fdc886;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+body main .setting input[type='radio']:checked {
+  background-color: #fdc886;
+}
+
+body main .setting input[type='radio']:focus {
+  outline: none;
+  border: 2px solid #dea764;
+  background-color: #dea764;
+}
+
+body main .setting fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .setting fieldset legend {
+  margin-bottom: 0.5rem;
+}
+
+body main .setting fieldset div {
+  border: 1px solid #000000;
+  border-radius: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+body main .setting fieldset div:last-child {
+  margin-right: 0;
+}
+
+body main .setting fieldset div input {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+body main .setting fieldset div label {
+  cursor: pointer;
+}
+
+body main .setting img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body main .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .ctaButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main ::-moz-range-track {
+  background: #d7dcdf;
+  border: 0;
+}
+
+body main input .error {
+  border: 2px solid #cd4218;
+}
+
+body main input .error:focus {
+  border: 1px solid #cd4218;
+}
+
+body main input::-moz-focus-inner,
+body main input ::-moz-focus-outer {
+  border: 0;
+}
+/*# sourceMappingURL=sassstyle.css.map */
