@@ -1,5 +1,5 @@
 # QR Code Generator API
-Coding along with danascript from [ The ultimate API Challenge. ](https://theultimateapichallenge.com/qr-code-generator-api)
+Coding along with danascript from [ The ultimate API Challenge. ](https://theultimateapichallenge.com/challenges/qr-code-generator-api)
 
 ### 🖥️ HTML - CSS - Javascript - Fetch
 `🖍️(second version with SCSS)`
